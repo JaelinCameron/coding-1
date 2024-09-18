@@ -1,0 +1,3 @@
+src -Used to add an image or video link to a element
+href -Used to connect and redirect a web page to an element
+alt -Used bt screen readers to provide 
