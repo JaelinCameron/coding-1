@@ -5,3 +5,10 @@
 -Jaelin made a navbar
 -Jaelin searched for images
 -Liam searched for images
+-Liam completed the restaurant pitch for the project.
+-Jaelin prepared and organized the HTML page to get started on the project.
+10/3/24
+-Jaelin Fitted the image 
+-Jaelin Imported the restaurant pitch to github
+-Jaelin is working on buttons
+-Liam is looking for food for the menu
