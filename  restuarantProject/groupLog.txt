@@ -24,3 +24,9 @@
 -Liam did work for another class
 10/7/2024
 -Liam finished adding prices for the menu items
+10/8/2024
+-Jaelin added the dance tab
+10/9/2024
+-Jaelin added Dance tab 
+-Jaelin changed menu tab with Cooking lesson
+-Liam Helped Jaelin make the navbar buttons work
