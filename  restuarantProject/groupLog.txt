@@ -30,3 +30,7 @@
 -Jaelin added Dance tab 
 -Jaelin changed menu tab with Cooking lesson
 -Liam Helped Jaelin make the navbar buttons work
+10/10/2024
+-Liam coded the video for the dance tab
+-Jaelin picked a video
+-Liam and Jaelin are Finished for now
