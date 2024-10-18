@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Grid</title>
+    <style>
+.ruleForGrid{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.oppositeClass{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+    </style>
+</head>
+
+<body class="grid-container">
+    <div class="ruleForGrid">1</div>
+    <div class="oppositeClass">2</div>
+    <div class="ruleForGrid">3</div>
+    <div class="oppositeClass">4</div>
+    <div class="">5</div>
+    <div class="">6</div>
+</body>
+
+</html>
