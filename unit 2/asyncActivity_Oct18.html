@@ -4,10 +4,13 @@
 <style>
 .grid-container {
   display: grid;
-  gap: 10px;
+  grid-template-areas: 'myArea myArea ';
+  grid-gap: 10px;
   background-color: #2196F3;
   padding: 10px;
+
 }
+
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
@@ -39,18 +42,30 @@ grid-row: 1; height: 200px;
     grid-row: 4;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+  height: px;
+}
+
+
 </style>
 </head>
 <body>
 
+  <ul>
+    <li>Navbar</li>
+  </ul>
 
 <div class="grid-container">
-  <div class="grid-item item1">NavBar</div>
+  <div class="grid-item item1">Main content</div>
   <div class="grid-item item2">AD </div>
   <div class="grid-item item3">Option 1</div>  
   <div class="grid-item item4">Option 2</div>
   <div class="grid-item item5">Option 3</div>
-  <div class="grid-item item6">Main content</div>
   <div class="grid-item item7">Footer</div>
 </div>
 
