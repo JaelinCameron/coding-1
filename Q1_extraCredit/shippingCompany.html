@@ -1,71 +1,462 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-body {
-  font-size: 18px;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: -webkit-sticky;
+      /* Safari */
+      position: sticky;
+      top: 0;
+    }
 
-li {
-  float: left;
-}
+    li {
+      float: left;
+    }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-li a:hover {
-  background-color: #3197b6;
-}
+    li a:hover {
+      background-color: #3197b6;
+    }
 
-.active {
-  background-color: rgb(38, 90, 204);
-}
-.bg {
+    .active {
+      background-color: rgb(38, 90, 204);
+    }
 
-background-image: url("");
+    .bg {
 
-
-height: 100%;
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTratBd8CYN7DJbWr83wCB0tPjWyOkD1B1IMg&s");
 
 
-background-position: center;
-background-repeat: no-repeat;
-background-size: 100%;
-}
+      height: 100%;
 
-</style>
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="header">
+  <div class="header">
 
-</div>
+  </div>
 
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">Order</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="search">Search</a></li>
-</ul>
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">Order</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="search">Search</a></li>
+  </ul>
 
-<div class="bg">
+  <div class="bg">
+  </div>
 
-</div>
+  <div>
+    <h1 style="font-size: 50px;">About</h1>
+    <p style="font-size: 25px;">Our shipping company was founed in 2022 by Jaelin Musk, we never charge any taxes for
+      shipping at all! We only ship exotic fruits.
+      We believe that the customer is always right. Our shipping company was rated top 40 in the state for 2 years.
+      We always give fair priced items and sales. We do not have much because are business is very slow
+      , but we hope we can convience you when you order.
+    </p>
+  </div>
+
+  <div>
+    <ul>
+      <h1 style="color: aliceblue;">Jackfruit😋</h1>
+      <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwEorzKbkcQDSovNQqHG9BpyzIRZGm_kjd8w&s">
+      </div>
+
+      <h1 style="color: aliceblue;">DragonFruit(Pitaya)😋</h1>
+      <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP0QqvKr5yITBd4EODM7YnL-9oEC21LaWD3A&s">
+      </div>
+
+      <h1 style="color: aliceblue;">StarFruit(Carambola)😋🤩</h1>
+      <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpCX3vSV5HJps8q22SaF44vOoBPpy6xBrfyA&s">
+      </div>
+
+      <h1 style="color: aliceblue;">Breadfruit😋</h1>
+      <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT24IBfFk3DAVlgbNf86X-Y1yX7rr_FKCzB7w&s">
+      </div>
+
+      <h1 style="color: aliceblue;">Guava😋</h1>
+      <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6BtEifkyJkDNkj-zQIuyrY2TXvtwZatcO2Q&s">
+      </div>
+
+    </ul>
+  </div>
+  <article>
+    <h1 class="shipprogress">Shipping Information</h1>
+
+    <form action="confirm()" id="shippingForm" name="shippingForm">
+        <fieldset>
+            <label for="firstName">First Name:</label>
+
+            <div class="ln">
+                <label for="lastName">Last Name:</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <input id="firstName" name="firstName" type="text">
+            <input class="lastName" id="lastName" name="lastName" type="text"> <span id="firstName_error"></span>  <span id="lastName_error"></span>
+        </fieldset>
+
+        <fieldset>
+            <label for="streetAddress1">Street Address:</label>
+
+            <div class="ad2">
+                <label class="ad2" for="streetAddress2">Shipping Origin Address:
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <input id="streetAddress1" name="streetAddress1" type="text">
+            <input class="streetAddress2" id="streetAddress2" name="streetAddress2" type="text"> <span id="streetAddress_error"></span>
+        </fieldset>
+
+        <fieldset>
+            <label for="city">City:</label>
+        </fieldset>
+
+        <fieldset>
+            <input id="city" name="city" type="text"> <span id="city_error"></span>
+        </fieldset>
+
+        <fieldset>
+            <label for="state">State:</label>
+        </fieldset>
+
+        <fieldset>
+            <select id="state">
+                <option selected value="0">
+                    -
+                </option>
+
+                <option value="AL">
+                    Alabama
+                </option>
+
+                <option value="AK">
+                    Alaska
+                </option>
+
+                <option value="AZ">
+                    Arizona
+                </option>
+
+                <option value="AR">
+                    Arkansas
+                </option>
+
+                <option value="CA">
+                    California
+                </option>
+
+                <option value="CO">
+                    Colorado
+                </option>
+
+                <option value="CT">
+                    Connecticut
+                </option>
+
+                <option value="DE">
+                    Delaware
+                </option>
+
+                <option value="DC">
+                    District Of Columbia
+                </option>
+
+                <option value="FL">
+                    Florida
+                </option>
+
+                <option value="GA">
+                    Georgia
+                </option>
+
+                <option value="HI">
+                    Hawaii
+                </option>
+
+                <option value="ID">
+                    Idaho
+                </option>
+
+                <option value="IL">
+                    Illinois
+                </option>
+
+                <option value="IN">
+                    Indiana
+                </option>
+
+                <option value="IA">
+                    Iowa
+                </option>
+
+                <option value="KS">
+                    Kansas
+                </option>
+
+                <option value="KY">
+                    Kentucky
+                </option>
+
+                <option value="LA">
+                    Louisiana
+                </option>
+
+                <option value="ME">
+                    Maine
+                </option>
+
+                <option value="MD">
+                    Maryland
+                </option>
+
+                <option value="MA">
+                    Massachusetts
+                </option>
+
+                <option value="MI">
+                    Michigan
+                </option>
+
+                <option value="MN">
+                    Minnesota
+                </option>
+
+                <option value="MS">
+                    Mississippi
+                </option>
+
+                <option value="MO">
+                    Missouri
+                </option>
+
+                <option value="MT">
+                    Montana
+                </option>
+
+                <option value="NE">
+                    Nebraska
+                </option>
+
+                <option value="NV">
+                    Nevada
+                </option>
+
+                <option value="NH">
+                    New Hampshire
+                </option>
+
+                <option value="NJ">
+                    New Jersey
+                </option>
+
+                <option value="NM">
+                    New Mexico
+                </option>
+
+                <option value="NY">
+                    New York
+                </option>
+
+                <option value="NC">
+                    North Carolina
+                </option>
+
+                <option value="ND">
+                    North Dakota
+                </option>
+
+                <option value="OH">
+                    Ohio
+                </option>
+
+                <option value="OK">
+                    Oklahoma
+                </option>
+
+                <option value="OR">
+                    Oregon
+                </option>
+
+                <option value="PA">
+                    Pennsylvania
+                </option>
+
+                <option value="RI">
+                    Rhode Island
+                </option>
+
+                <option value="SC">
+                    South Carolina
+                </option>
+
+                <option value="SD">
+                    South Dakota
+                </option>
+
+                <option value="TN">
+                    Tennessee
+                </option>
+
+                <option value="TX">
+                    Texas
+                </option>
+
+                <option value="UT">
+                    Utah
+                </option>
+
+                <option value="VT">
+                    Vermont
+                </option>
+
+                <option value="VA">
+                    Virginia
+                </option>
+
+                <option value="WA">
+                    Washington
+                </option>
+
+                <option value="WV">
+                    West Virginia
+                </option>
+
+                <option value="WI">
+                    Wisconsin
+                </option>
+
+                <option value="WY">
+                    Wyoming
+                </option>
+            </select> <span id="state_error"></span>
+        </fieldset>
+
+        <fieldset>
+            <label for="zipCode">Zip:</label>
+        </fieldset>
+
+        <fieldset>
+            <input id="zipCode" maxlength="5" name="zipCode" type="text">
+            <span id="zipCode_error"></span>
+        </fieldset>
+
+        <h2>Contact Information</h2>
+
+        <fieldset>
+            <label for="emailAddress1">Email Address:</label>
+        </fieldset>
+
+        <fieldset>
+            <input id="emailAddress1" name="emailAddress1" type="text">
+            <span id="emailAddress1_error"></span>
+        </fieldset>
+
+        <fieldset>
+            <label for="emailAddress2">Confirm Email:</label>
+        </fieldset>
+
+        <fieldset>
+            <input id="emailAddress2" name="emailAddress2" type="text">
+            <span id="emailAddress2_error"></span>
+        </fieldset>
+
+        <fieldset>
+            <label for="phoneNumber1">
+                <img alt="Click for more information." class="derp" height="20" onclick="phoneInfo()" src="img/info.png" width="20">Phone Number:
+            </label>
+        </fieldset>
+
+        <fieldset>
+            (
+            <input class="areaCode" id="areaCode" maxlength="3" name="areaCode" placeholder="###" type="text">)
+            <input class="phoneNumber1" id="phoneNumber1" maxlength="3" name="phoneNumber1" placeholder="###" type="text">-
+            <input class="phoneNumber2" id="phoneNumber2" maxlength="4" name="phoneNumber2" placeholder="####" type="text"> <span id="phoneNumber_error"></span>
+        </fieldset>
+
+        <fieldset>
+            <input onclick="check(this.form)" type="button" value="Next">
+        </fieldset>
+
+        <h1 class="fruitst">Fruit Order</h1>
+
+        <fieldset>
+          <label for="fruitorder">Fruit Select:</label>
+        </fieldset>
+
+        <fieldset>
+          <select id="fruitorder">
+              <option selected value="0">
+                  -
+              </option>
+
+              <option value="Jackfruit">
+                Jack fruit_5.99
+              </option>
+
+              <option value="Dragonfruitw">
+                Dragon Fruit-White Flesh_6.50
+              </option>
+
+              <option value="Dragonfruitp">
+                Dragon Fruit-Pink Flesh_6.99
+              </option>
+
+              <option value="Dragonfruity">
+                Dragon Fruit-Yellow-White Flesh_6.50
+              </option>
+
+              <option value="Starfruit">
+                Star Fruit_3.99
+              </option>
+
+              <option value="Breadfruit">
+                Bread Fruit_7.99
+              </option>
+
+              <option value="Guava">
+                Guava_5.99
+              </option>
+
+
+    </form>
+
+</article>
 </body>
+
 </html>
