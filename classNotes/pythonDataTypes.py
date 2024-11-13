@@ -38,7 +38,7 @@ post=[]
 # Every new starts with a capital letter
 # The letters are supposed to represent the camels hump
 
-homeaddress= "123 Main Street"
+homeAddress= "123 Main Street"
 telephonenumber= "2345654534"
 telephoneBillPaid= True
 telephoneBillPaid= False
