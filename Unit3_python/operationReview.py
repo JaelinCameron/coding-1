@@ -8,7 +8,7 @@ paypalfee = '4'
 
 print(deposit_amount + checking_acount)
 
-parlayamount =''
+parlayamount ='200'
 
 # assignment operators - giving varibles values. KEYWORD is assignment
 # any time you're using a varible, you are using the assignment operator
@@ -54,5 +54,5 @@ print(dailyCaloricIntake != ApplebeesMeal)
 # 1 equal sign is used only for assigning values
 # 2 equal signs are used for comaparing 
 
-# logical operator
+# logical operator- symbols or words that connect expressions to create a compound expression
 
