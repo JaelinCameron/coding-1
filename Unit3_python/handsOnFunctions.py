@@ -66,5 +66,5 @@ def foodExpiration(month, date, year):
     else:
         print('The food is still good')
 
-foodExpiration(12, 8, 2025)            
+#foodExpiration(12, 8, 2025)            
      

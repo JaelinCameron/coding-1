@@ -9,10 +9,10 @@
 
 # print() is a built in function. When we oass in data it will output 
 # it into the terminal automatically.
-print('Coding Class')
+#print('Coding Class')
 
 # input () is a built in function. It allows us to write and pass 
-#dra into our program from the terminal
+#drag into our program from the terminal
 #name= input("what is your name?")
 #print(name)
 
@@ -89,4 +89,4 @@ def welcomeMessage():
     print("Hello, Welcome back to school, " + name)   
 
 
-welcomeMessage()
+#welcomeMessage()
