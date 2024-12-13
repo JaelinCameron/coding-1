@@ -25,7 +25,11 @@ def welcomeMsgByTime(number, time):
 
 
 def gradingSystem(percentage):
-    if percentage >= 90:
+    if percentage > 100:
+        print('Sorry you need to put a grade in the 100-0 range')
+    if percentage < 0:
+        print('Sorry you need to put a grade in the 100-0 range')    
+    elif percentage >= 90:
         print('Congratulations! You have an A.')
     elif percentage >= 80:
         print('Congratulations! You have an B.')
@@ -38,5 +42,5 @@ def gradingSystem(percentage):
     else:
         print('Sorry, but you are failing try to get your grade higher.')
 
-gradingSystem()
+gradingSystem(-100)
 
