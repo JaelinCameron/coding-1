@@ -5,8 +5,8 @@
 
 
 
-# Intagers 
-# Intagers are pieces if data that represent whole numbers.
+# Integers 
+# Integers are pieces if data that represent whole numbers.
 # whole nubmers do not have decimals 
 22
 45
