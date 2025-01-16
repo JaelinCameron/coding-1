@@ -26,7 +26,7 @@ print(skii_trip_items)
 skii_trip_items.insert(2,'goggles')
 print(skii_trip_items)
 
-# pop() method - allows us to remove the last item in a list
+#pop() method - allows us to remove the last item in a list
 skii_trip_items.pop()
 print(skii_trip_items)
 
@@ -52,7 +52,21 @@ def clothingBySeason():
 
 #clothingBySeason()
 
-def favoriteRestaurant():
+#pop() method - allows us to remove the last item in a list
+skii_trip_items.pop()
+print(skii_trip_items)
+
+# remove() method - allows us to remove an item fron the lists
+# based specificly on the data's value.
+skii_trip_items.remove('snow boots')
+print(skii_trip_items)
+
+# clear() method - allows us to delete the entire list.
+skii_trip_items.clear()
+print(skii_trip_items)
+
+# del function 
+# del skii_trip_items favoriteRestaurant():
     restuarant =['wendy','chick-filet','KFC']
     print(restuarant)
     response = input('What is your favorite restuatrant')
