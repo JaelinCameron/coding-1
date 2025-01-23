@@ -1,3 +1,5 @@
+import random
+
 # Loops - A construct in programing 
 # where instructions will repeat over and
 # over until a specific condition is met.
@@ -32,4 +34,80 @@ def inventoryLoop():
       print(userInventory)
       pickUpItem= input('what item are you picking?')
 
-inventoryLoop()
+#inventoryLoop()
+
+# save for another day def replaceInventoryItem():
+# #def removeInventoryItem():
+
+def rngGame(): 
+    randomNumber = random.randrange(1, 11)
+    print(randomNumber)
+    userAnswer = ''
+    while randomNumber != userAnswer:
+        userInputGuess = int(input('Guess a number between 1 and 10:'))
+        userAnswer = userInputGuess 
+    if randomNumber != userAnswer:
+        print('Incorrect Guess. Try agian')
+    else:
+        print('This is the correct answer')
+
+rngGame()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Create a function that uses a loop to check a password.
+# if the password is correct,the loop will stop. If the password
+# is incorrect the loop will continue.
+
+# add in code that will provide a confirmation messehe to
+# the iser, For example;  if the passwrod is correct , it should
+# congradulate the user, and if its incorrect it
+#  should tell them to try agian
+
+def passwordSystem():
+    correctPassword= 'stonegaurd73'
+    userPassword = ''
+    while userPassword != correctPassword:
+        print('incorrect pw. try agian')
+        userPw = input('please enter your password:')
+    if userPassword  == correctPassword:
+        print('Congrats!')
+passwordSystem()
+
+
+
+
+
