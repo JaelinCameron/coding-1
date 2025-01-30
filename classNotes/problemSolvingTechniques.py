@@ -24,3 +24,8 @@
 # When writing psuedo code your goal is to simply write down the steps you would take to 
 # solve the problem but within the context of the coding language
 # You are not actually writing the actual functional code when writing psuedo code
+
+
+
+
+

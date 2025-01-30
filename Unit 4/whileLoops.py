@@ -51,10 +51,7 @@ def rngGame():
     else:
         print('This is the correct answer')
 
-rngGame()
-
-
-
+# rngGame()
 
 
 
